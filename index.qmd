@@ -1,0 +1,14 @@
+---
+title: "my project"
+format: html
+editor: visual
+---
+
+# Introduction
+
+this is my introduction to Quarto
+
+```{r}
+data(mtcars)
+plot(mtcars$hp, mtcars$mpg)
+```
