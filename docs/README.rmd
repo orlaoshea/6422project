@@ -49,21 +49,55 @@ df_long_clean <- df_long %>%
 
 ```{r}
 summary(df_long_clean)
+#Area code          Area name             Year               Value      
+#Length:2642        Length:2642        Length:2642        Min.   :50.13  
+#Class :character   Class :character   Class :character   1st Qu.:69.56  
+#Mode  :character   Mode  :character   Mode  :character   Median :73.73  
+                                                          #Mean   :73.62  
+                                                          #3rd Qu.:78.07  
+                                                          #Max.   :90.68
 ```
 
 #### *First few rows of dataset:*
 
 ```{r}
 head(df_long_clean, 10)
+# A tibble: 10 × 4
+#`Area code` `Area name`   Year    Value
+#<chr>       <chr>         <chr>   <dbl>
+#1 E06000001   Hartlepool    2016-17  74.2
+#2 E06000001   Hartlepool    2017-18  69.4
+#3 E06000001   Hartlepool    2018-19  66.0
+#4 E06000001   Hartlepool    2019-20  67.6
+#5 E06000001   Hartlepool    2020-21  70.5
+#6 E06000001   Hartlepool    2021-22  69.6
+#7 E06000001   Hartlepool    2022-23  72.8
+#8 E06000001   Hartlepool    2023-24  74.0
+#9 E06000002   Middlesbrough 2016-17  63.2
+#10 E06000002   Middlesbrough 2017-18  64.3
 ```
 
 ### Repository Structure, including visualisation.
 
-data/ : Contains the raw dataset (gcses-and-equivalent-in-english-and-maths-table-data.csv)
+```         
+**Dataset:**  
+[gcses-and-equivalent-in-english-and-maths-table-data.csv](https://github.com/orlaoshea/6422project/blob/main/docs/gcses-and-equivalent-in-english-and-maths-table-data.csv)
+```
 
-analysis.qmd : Code and narrative via Quarto
+```         
+**Quarto Script (.qmd):** 
+[Project Script](https://github.com/orlaoshea/6422project/blob/main/docs/PSY6422_Project_250123623.qmd)
+```
 
-analysis.html: Rendered output file
+```         
+**Rendered HTML Report:**  
+[Interactive Heatmap Report](https://github.com/orlaoshea/6422project/blob/main/docs/PSY6422_Project_250123623.html)
+```
+
+```         
+## Live Interactive Report
+https://orlaoshea.github.io/6422project/
+```
 
 ### Prerequisites
 
