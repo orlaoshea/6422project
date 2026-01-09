@@ -112,23 +112,23 @@ The ONS already has their data cleaned and aggregated, such as being cross‑che
 <h4>R Code Used:</h4>
 
 <pre><code>
-df <- read.csv("gcses-and-equivalent-in-english-and-maths-table-data.csv", 
+df &lt;- read.csv("gcses-and-equivalent-in-english-and-maths-table-data.csv", 
                skip = 7, 
                header = FALSE, 
                quote = "\"", 
                sep = ",")
-names(df) <- c("Area code","Area name","2016-17","2017-18","2018-19", 
+names(df) &lt;- c("Area code","Area name","2016-17","2017-18","2018-19", 
                "2019-20","2020-21","2021-22","2022-23","2023-24")
 
-df_long <- df %>% 
+df_long &lt;- df %&gt;% 
   pivot_longer(cols = `2016-17`:`2023-24`, 
                names_to = "Year", 
                values_to = "Value")
 
-df_long <- df_long %>% mutate(Value = as.numeric(Value))
+df_long &lt;- df_long %&gt;% mutate(Value = as.numeric(Value))
 
-df_long_clean <- df_long %>% 
-  mutate(Value = as.numeric(Value)) %>% 
+df_long_clean &lt;- df_long %&gt;% 
+  mutate(Value = as.numeric(Value)) %&gt;% 
   filter(!is.na(Value))
 </code></pre>
 
@@ -140,9 +140,9 @@ summary(df_long_clean)
 #Length:2642        Length:2642        Length:2642        Min.   :50.13  
 #Class :character   Class :character   Class :character   1st Qu.:69.56  
 #Mode  :character   Mode  :character   Mode  :character   Median :73.73  
-                                                        #Mean   :73.62  
-                                                        #3rd Qu.:78.07  
-                                                        #Max.   :90.68
+#Mean   :73.62  
+#3rd Qu.:78.07  
+#Max.   :90.68
 </code></pre>
 
 <h4>First few rows of dataset:</h4>
@@ -151,7 +151,7 @@ summary(df_long_clean)
 head(df_long_clean, 10)
 # A tibble: 10 × 4
 #`Area code` `Area name`   Year    Value
-#<chr>       <chr>         <chr>   <dbl>
+#&lt;chr&gt;       &lt;chr&gt;         &lt;chr&gt;   &lt;dbl&gt;
 #1 E06000001   Hartlepool    2016-17  74.2
 #2 E06000001   Hartlepool    2017-18  69.4
 #3 E06000001   Hartlepool    2018-19  66.0
@@ -163,7 +163,6 @@ head(df_long_clean, 10)
 #9 E06000002   Middlesbrough 2016-17  63.2
 #10 E06000002   Middlesbrough 2017-18  64.3
 </code></pre>
-
 
 <h4>Repository Structure, including visualisation</h4>
 
