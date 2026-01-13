@@ -1,4 +1,7 @@
-# Orla O'Shea PSY6422 Project
+--- 
+title: "Orla O'Shea PSY6422 Project" 
+format: html 
+---
 
 ## Longitudinal trends in attainment of GCSEs in English and Maths across England, 2016-2024.
 
