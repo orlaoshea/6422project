@@ -40,7 +40,23 @@ df_long <- df_long %>% mutate(Value = as.numeric(Value))
 df_long_clean <- df_long %>% 
   mutate(Value = as.numeric(Value)) %>% 
   filter(!is.na(Value))
+```
 
+### Summary of cleaned data:
+
+```{r}
+summary(df_long_clean)
+```
+
+### First few rows of data (as a tibble):
+
+```{r}
+head(df_long_clean, 10)
+```
+
+### Visualising the data:
+
+```{r}
 library(ggplot2)
 library(tidyverse)
 library(plotly) #These packages allowed me to visualise the data and make it interactive.
@@ -69,7 +85,11 @@ df_heatmap +
     axis.title = element_text(size = 8),
     panel.grid.minor = element_blank()
   )
+```
 
+### My final visualisation:
+
+```{r}
 #Made the heatmap longer in order to leave spaces between the y-axis variables,
 #and used the plotly package to make the map interactive so you can get the specific
 #percentages of qualifications for each region per academic year.
