@@ -27,7 +27,7 @@ The constant/measurement represents the percentage of the population of the area
 
 **Quarto Script (.qmd):** [Project Script](https://github.com/orlaoshea/6422project/blob/main/docs/PSY6422_Project_250123623.qmd)
 
-**Rendered HTML Report:** [Interactive Heatmap Report](https://github.com/orlaoshea/6422project/blob/main/docs/PSY6422_Project_250123623.html)
+**Rendered HTML Report:** [Interactive Heatmap Report](https://orlaoshea.github.io/6422project/PSY6422_Project_250123623.html)
 
 **Live Interactive Report:** <https://orlaoshea.github.io/6422project/>
 
